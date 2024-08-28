@@ -11,13 +11,14 @@
  - Setup de dependências de rotas
  
  - git commit -m"feat: exercicio 01 - adiciona routers ao projeto."
- - 
+
 ## Links
-FlowByte - Blocos e componentes do Tailwind
-Tailwind Awesome - Blocos Prontos de Tailwind
-Tail Blocks - Blocos Prontos de Tailwind
-PrimeReact - Lib de Componentes que vamos usar
-Anotações:
-CRA (Create React App): foi um dos primeiros bundlers de aplicações em React. Ele usa como configuração o WEBPACK.
-CRA está para ser descontinuado.
-Vite: utiliza o proprio vite.config para configuração, é menos complexo, mais rapido e compativel com outros frameworks (React, Vue, Next, etc). Boa parte dos plugins para vite são auto configuraveis, ou de fácil configuração (tailwind)
+- FlowByte - Blocos e componentes do Tailwind
+- Tailwind Awesome - Blocos Prontos de Tailwind
+- Tail Blocks - Blocos Prontos de Tailwind
+- PrimeReact - Lib de Componentes que vamos usar
+
+## Anotações:
+- CRA (Create React App): foi um dos primeiros bundlers de aplicações em React. Ele usa como configuração o WEBPACK.
+- CRA está para ser descontinuado.
+- Vite: utiliza o proprio vite.config para configuração, é menos complexo, mais rapido e compativel com outros frameworks (React, Vue, Next, etc). Boa parte dos plugins para vite são auto configuraveis, ou de fácil configuração (tailwind)
