@@ -1,4 +1,6 @@
+// src/Routes/index.tsx
 import { Routes, Route } from 'react-router-dom';
+import Departamentos from '../Pages/Departamentos/Listagem';  // Certifique-se de que o caminho está correto
 
 const AppRoutes = () => {
   return (
@@ -13,11 +15,7 @@ const AppRoutes = () => {
       />
       <Route
         path="/departamentos"
-        element={
-          <div className="flex justify-center items-center h-1/2 mt-[76px]">
-            <h1 className="text-2xl font-bold">Departamentos</h1>
-          </div>
-        }
+        element={<Departamentos />}  // Usando o componente Departamentos aqui
       />
       <Route
         path="/departamentos/new"
