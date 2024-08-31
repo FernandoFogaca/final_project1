@@ -18,7 +18,7 @@ const Departamentos = () => {
   ];
 
   // Função para renderizar as ações
-  const bodyAcao = (rowData: any) => {
+  const bodyAcao = () => {
     return (
       <>
         <Button icon="pi pi-pencil" rounded severity="warning" className="mr-2" />

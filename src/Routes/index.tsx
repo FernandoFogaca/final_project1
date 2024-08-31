@@ -1,6 +1,7 @@
 // src/Routes/index.tsx
 import { Routes, Route } from 'react-router-dom';
 import Departamentos from '../Pages/Departamentos/Listagem';  // Certifique-se de que o caminho está correto
+import FormDepartamentos from '../Pages/Departamentos/Forms';
 
 const AppRoutes = () => {
   return (
@@ -8,8 +9,8 @@ const AppRoutes = () => {
       <Route
         path="/"
         element={
-          <div className="flex justify-center items-center h-1/2 mt-[76px]">
-            <h1 className="text-2xl font-bold">Home</h1>
+          <div className="flex justify-center place-items-center h-1/2 mt-[76px]">
+            
           </div>
         }
       />
@@ -19,11 +20,7 @@ const AppRoutes = () => {
       />
       <Route
         path="/departamentos/new"
-        element={
-          <div className="flex justify-center items-center h-1/2 mt-[76px]">
-            <h1 className="text-2xl font-bold">Novo Departamento</h1>
-          </div>
-        }
+        element={<FormDepartamentos />}  // Usando o componente FormDepartamentos aqui
       />
       <Route
         path="/departamentos/edit/:id"
