@@ -1,6 +1,6 @@
   @layer tailwind-base, primereact, tailwind-utilities;
 
-  /* IMPORTANTE: Em modo "styled", você deve adicionar o tema PrimeReact aqui. Não inclua no modo "unstyled" */
+  
   @import 'primereact/resources/themes/lara-dark-blue/theme.css' layer(primereact);
   
   @layer tailwind-base {
