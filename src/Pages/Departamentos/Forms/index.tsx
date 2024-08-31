@@ -14,11 +14,11 @@ const FormDepartamentos: React.FC = () => {
     setSubmitted(true);
 
     if (nome && sigla) { 
-      // Log dos valores para depuração ou outra ação
+    
       console.log('Nome:', nome, 'Sigla:', sigla);
-      // Aqui você pode fazer a chamada à API ou outra ação necessária
+      // fazer a chamada à API ou outra ação necessária
 
-      // Redirecionar para a página de listagem após o envio
+      // Redirecionar para a página após o envio
       navigate('/departamentos');
     }
   };
