@@ -12,6 +12,14 @@
  
  - git commit -m"feat: exercicio 01 - adiciona routers ao projeto."
 
+ ## Melhorias Recentes
+- Padronização do layout em todas as páginas.
+- Implementação de um sistema de rotas com links dinâmicos.
+- Criação de uma página de boas-vindas com imagem e botão em cinco idiomas.
+- Integração de um menu interativo e responsivo para navegação.
+
+
+
 ## Links
 - FlowByte - Blocos e componentes do Tailwind
 - Tailwind Awesome - Blocos Prontos de Tailwind
