@@ -1,16 +1,40 @@
-  @layer tailwind-base, primereact, tailwind-utilities;
+@layer tailwind-base, primereact, tailwind-utilities;
 
-  
-  @import 'primereact/resources/themes/lara-dark-blue/theme.css' layer(primereact);
-  
-  @layer tailwind-base {
-    @tailwind base;
-  }
-  
-  @layer tailwind-utilities {
-    @tailwind components;
-    @tailwind utilities;
+@import 'primereact/resources/themes/lara-light-indigo/theme.css' layer(primereact);
+@import 'primereact/resources/primereact.min.css';
+
+@layer tailwind-base {
+  @tailwind base;
 }
 
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
 
-  
+/* Estilos personalizados */
+body {
+  background-color: #f3f4f6; /* Fundo claro elegante */
+  color: #333; /* Texto geral */
+}
+
+h1, h2, h3 {
+  color: #2c3e50; /* Cor dos títulos */
+}
+
+h1 {
+  color: #ffffff; /* Garantir que o texto do título seja branco */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7); /* Sombra de texto para maior contraste */
+}
+
+a {
+  text-decoration: none; /* Remover sublinhado dos links */
+}
+
+a:focus {
+  outline: none; /* Remover contorno padrão ao focar */
+}
+
+button, a {
+  transition: all 0.3s ease; /* Transição suave para botões e links */
+}
