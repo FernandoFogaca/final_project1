@@ -23,7 +23,7 @@ function App() {
               to="/departamentos"
               className="text-white hover:text-blue-300 transition-colors duration-300"
             >
-              Lista
+              Departamentos
             </Link>
             <Link
               to="/departamentos/new"

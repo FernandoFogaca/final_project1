@@ -1,5 +1,7 @@
 @layer tailwind-base, primereact, tailwind-utilities;
-
+@import 'primereact/resources/themes/lara-light-indigo/theme.css'; /* Tema do PrimeReact */
+@import 'primereact/resources/primereact.min.css'; /* Estilos do PrimeReact */
+@import 'primeicons/primeicons.css'; /* Ícones do PrimeReact */
 @import 'primereact/resources/themes/lara-light-indigo/theme.css' layer(primereact);
 @import 'primereact/resources/primereact.min.css';
 
@@ -11,6 +13,9 @@
   @tailwind components;
   @tailwind utilities;
 }
+
+
+
 
 /* Estilos personalizados */
 body {
