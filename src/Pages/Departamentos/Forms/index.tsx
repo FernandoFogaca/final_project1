@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { insereDepartamento } from '../.././Departamentos/insereDepartamento'; // Importação da função de inserção de departamento
-import {getDepartamento} from '../.././Departamentos/editaDepartamento'; // Importação da função de edição de departamento
 
 
 // Mock de dados de departamentos já registrados (pode ser removido se os dados vierem da API)
