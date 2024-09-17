@@ -6,9 +6,11 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && pnpm run copy_cname",
+    "copy_cname": "cp CNAME ./dist",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "pnpm run build && cd ./dist && surge"
   },
   "dependencies": {
     "@types/react-calendar": "^3.9.0",

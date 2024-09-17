@@ -1,45 +1,39 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { Button } from 'primereact/button';
 import { useNavigate } from 'react-router-dom';
 import listaDepartamentos from '../../../Services/Departamentos/listaDepartamentos';
 
-const Departamentos = () => {
+const Departamentos: React.FC = () => {
   const navigate = useNavigate();
-
-  // Lista de departamentos
   const [departamentos, setDepartamentos] = useState<any[]>([]);
 
   useEffect(() => {
-    listaDepartamentos({ setDepartamentos });
+    const fetchDepartamentos = async () => {
+      const data = await listaDepartamentos();
+      setDepartamentos(data);
+    };
+
+    fetchDepartamentos();
   }, []);
 
-  // Função para renderizar as ações
-  const bodyAcao = (rowData: any) => {
-    return (
-      <>
-        <Button
-          icon="pi pi-pencil"
-          rounded
-          className="mr-2 bg-yellow-500 text-white hover:bg-yellow-600"
-          onClick={() => navigate(`/departamentos/edit/${rowData.id_departamento}`)} // Corrigi a interpolação aqui
-        />
-        <Button
-          icon="pi pi-trash"
-          rounded
-          className="bg-red-500 text-white hover:bg-red-600"
-          onClick={() => handleDelete(rowData.id_departamento)}
-        />
-      </>
-    );
-  };
-
-  // Função para excluir um departamento
-  const handleDelete = (id: number) => {
-    // Implemente a lógica de exclusão aqui
-    alert(`Departamento com ID ${id} excluído`); // Corrigi a interpolação aqui
-  };
+  const bodyAcao = (rowData: any) => (
+    <>
+      <Button
+        icon="pi pi-pencil"
+        rounded
+        className="mr-2 bg-yellow-500 text-white hover:bg-yellow-600"
+        onClick={() => navigate(`/departamentos/edit/${rowData.id_departamento}`)}
+      />
+      <Button
+        icon="pi pi-trash"
+        rounded
+        className="bg-red-500 text-white hover:bg-red-600"
+        onClick={() => navigate(`/departamentos/${rowData.id_departamento}/funcionarios`)}
+      />
+    </>
+  );
 
   return (
     <div className="p-6 bg-gray-950 shadow-lg rounded-lg w-full max-w-4xl">

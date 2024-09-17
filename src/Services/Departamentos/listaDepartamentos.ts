@@ -1,4 +1,4 @@
-import api from "../api";
+import api from '../api';
 
 interface Departamento {
   id_departamento: number;
@@ -6,12 +6,13 @@ interface Departamento {
   sigla: string;
 }
 
-const listaDepartamentos = async ({ setDepartamentos }: { setDepartamentos: (data: Departamento[]) => void }) => {
+const listaDepartamentos = async (): Promise<Departamento[]> => {
   try {
-    const result = await api.get<Departamento[]>('/departamentos');
-    setDepartamentos(result.data);
+    const response = await api.get<Departamento[]>('/departamentos');
+    return response.data;
   } catch (error) {
     console.error('Erro ao listar departamentos', error);
+    return [];
   }
 };
 
