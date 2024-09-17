@@ -18,7 +18,7 @@
 - Criação de uma página de boas-vindas com imagem e botão em cinco idiomas.
 - Integração de um menu interativo e responsivo para navegação.
 
-# Live Project: [Magical Smell](https://magical-smell.surge.sh/)
+# Live Project: [Management System](https://magical-smell.surge.sh/)
 
 Explore the live version of the project by clicking the link below:
 
